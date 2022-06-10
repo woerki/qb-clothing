@@ -1081,7 +1081,7 @@ end)
 
 RegisterNUICallback('removeOutfit', function(data, cb)
     TriggerServerEvent('qb-clothing:server:removeOutfit', data.outfitName, data.outfitId)
-    QBCore.Functions.Notify("You have deleted your"..data.outfitName.." outfit!")
+    QBCore.Functions.Notify("You have deleted your "..data.outfitName.." outfit!")
     cb('ok')
 end)
 
